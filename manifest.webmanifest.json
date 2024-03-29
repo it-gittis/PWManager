@@ -1,0 +1,9 @@
+{ 
+    "name": "Meine PWA-App",
+    "short_name": "My PWA",
+    "icons": [{
+        "src": "images1.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+    }]
+}
