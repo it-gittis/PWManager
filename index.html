@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Password Manager</title>
-    <!-- Link zum Favicon -->
- <link rel="icon" type="image/png" href="images1.png">
+   <!-- Link zum Favicon -->
+   <link rel="icon" type="image/png" href="images1.png">
 <link rel="manifest" href="/manifest.webmanifest.json">
 <link rel="stylesheet" href="style.css">
 <p align="right">
@@ -14,52 +14,465 @@
 <p align="center">
     <h1>Password Manager</h1>
 
-    <body>
-     
-
+    <body> 
+       
     <p align="center">
         <button name="Kopas" onclick="Kopas()" type="button" style="background-color: red">Kopas</button>
-        <p align="center">
         <button name="Vami" onclick="Vami()" type="button"  style="background-color: red"> Vami</button>
-        <p align="center">
-        <button name="Vaex" onclick="Vaex()" type="button" style="background-color: red"> vaex</button>
-        <p align="center">
+        <button name="Vaex" onclick="Vaex()" type="button" style="background-color: red"> Vaex</button>
         <button name="Vega" onclick="Vega()" type="button"  style="background-color: red"> Vega</button>
-        <p align="center">
         <button name="Vab" onclick="Vab()" type="button"  style="background-color: red"> Vab</button>
-        <p align="center">
         <button name="Oli" onclick="Oli()" type="button"  style="background-color: red"> Oli</button>
+    </p>
+  <!--- <form style=" width:900px; margin:auto;"> -->
+        <label id="vab_pw" style="display: none;" >
+            <table>
+                <table border="3">
+                    
+                <tr>
+                <th>Maschinen</th>
+                <td>Anlage</td>
+                <td>Benutzername</td>
+                <td>Passwort</td> 
+            <tr>
+                <th>Kopas </th>
+                <td>alle</td>
+                <td>Bediener</td> 
+                <td>555</td>
+            </tr>
+            <tr>
+                <th>Ishida Bandwaage </th>
+                <td>alle</td>
+                <td>1</td> 
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Metalldetektor Mesutronic </th>
+                <td>alle</td>
+                <td>user</td> 
+                <td>2314</td>
+            </tr>
+            <tr>
+                <th>Vimco</th>
+                <td>alle</td>
+                <td></td> 
+                <td></td>
+            </tr>
+                <tr>
+                <th>Siemens Kamera</th>
+                <td>alle</td>
+                <td>Benutzer</td> 
+                <td>Benutzer#1</td>
+            </tr>
+                <tr>
+                <th>Rovema Sammelpacker</th>
+                <td>VAB</td>
+                <td>Bediener</td> 
+                <td>123</td>
+                </tr>
+                <tr>
+                 <th>Mettler Waage </th>
+                 <td>VAB</td>
+                <td>Bediener</td>
+                 <td>2</td> 
+                 </tr>
+                <tr>
+     <th>Dienst </th>
+    <td>VAB / VAM </td>
+    <td>dienst </td>
+     <td>2368</td> 
+    </tr>
+<tr>
+      <th>Rovema </th>
+  <td>VAB 2 </td>
+    <td>Bediener</td>
+    <td>123</td> 
+</tr>
+<tr>
+                                
+<th>Rovema </th>
+<td>VAB 1 </td>
+ <td>Bediener</td>
+<td>123</td> 
+ </tr>
+<tr>
+ <th>Rovema </th>
+ <td>VAB Überkartonierer</td>
+ <td>Bediener</td>
+ <td>123</td> 
+</tr>
+<tr>
+<th>Begasungssystem </th>
+ <td>VAB / VAMI </td>
+ <td>Vorgesetzter</td>
+ <td>1982</td> 
+ </tr>
+
+ <th>Ink Jet Videojet 1880 </th>
+ <td>VAB + VAMI</td>
+ <td>Bediener </td>
+<td>1111</td> 
+     </tr>
+ <tr>
+ </table>
+ </label>
 
 
-        <script>
+            <label id="kopas_pw" style="display: none;" >
+                <table>
+                    <table border="3">
+                        
+                    <tr>
+                    <th>Maschinen</th>
+                    <td>Anlage</td>
+                    <td>Benutzername</td>
+                    <td>Passwort</td>
+                </tr> 
+                <tr>
+                    <th>Kopas </th>
+                    <td>alle</td>
+                    <td>Bediener</td>
+                    <td>555</td> 
+                </tr>
+                <tr>
+                    <th>Ishida Bandwaage </th>
+                    <td>alle</td>
+                    <td>1</td>
+                    <td>1</td> 
+                </tr>
+                <tr>
+                    <th>Metalldetektor Mesutronic </th>
+                    <td>alle</td>
+                    <td>user</td> 
+                    <td>2314</td>
+                </tr>
+                <tr>
+                    <th>Vimco</th>
+                    <td>alle</td>
+                    <td></td> 
+                    <td></td>
+                </tr>
+                    <tr>
+                    <th>Siemens Kamera</th>
+                    <td>alle</td>
+                    <td>Benutzer</td> 
+                    <td>Benutzer#1</td>
+                </tr>
+                   
+                    <tr>
+                        <th>Kopas</th>
+                        <td>alle</td>
+                        <td>Bediener</td> 
+                        <td>555</td>
+                        </tr>
+                
+                    </table>
+                </label>
+
+                <label id="vami_pw" style="display: none;" >
+                    <table>
+                        <table border="3">
+                            
+                        <tr>
+                        <th>Maschinen</th>
+                        <td>Anlage</td>
+                        <td>Benutzername</td>
+                        <td>Passwort</td> 
+                    <tr>
+                        <th>Kopas </th>
+                        <td>alle</td>
+                        <td>Bediener</td>
+                        <td>555</td> 
+                    </tr>
+                    <tr>
+                        <th>Ishida Bandwaage </th>
+                        <td>alle</td>
+                        <td>1</td>
+                        <td>1</td> 
+                    </tr>
+                    <tr>
+                        <th>Metalldetektor Mesutronic </th>
+                        <td>alle</td>
+                        <td>user</td> 
+                        <td>2314</td>
+                    </tr>
+                    <tr>
+                        <th>Vimco</th>
+                        <td>alle</td>
+                        <td></td>
+                        <td></td> 
+                    </tr>
+                        <tr>
+                        <th>Siemens Kamera</th>
+                        <td>alle</td>
+                        <td>Benutzer</td> 
+                        <td>Benutzer#1</td>
+                    </tr>
+                        <tr>
+                        <th>Dienst</th>
+                        <td>VAB / VAM</td>
+                        <td>dienst</td>
+                        <td>2368</td> 
+                        </tr>
+                        <tr>
+                            <th>Rovema</th>
+                            <td>VAMI</td>
+                            <td>Bediener</td>
+                            <td>123</td>   
+                            </tr>
+                            <tr>
+                                <th>Begasungssystem</th>
+                                <td>VAB / VAMI</td>
+                                <td>Vorgesetzter</td>
+                                <td>1982</td>   
+                                </tr>
+                                <tr>
+                                    <th>Ink Jet Videojet 1880</th>
+                                    <td>VAB + VAMI</td>
+                                    <td>Bediener</td>
+                                    <td>1111</td>   
+                                    </tr>
+                    
+                        </table>
+                    </label>
+
+                    <label id="vaex_pw" style="display: none;">
+                        <table>
+                            <table border="3">
+                                
+                            <tr>
+                            <th>Maschinen</th>
+                            <td>Anlage</td>
+                            <td>Benutzername</td>
+                            <td>Passwort</td> 
+                        <tr>
+                            <th>Kopas </th>
+                            <td>alle</td>
+                            <td>Bediener</td> 
+                            <td>555</td>
+                        </tr>
+                        <tr>
+                            <th>Ishida Bandwaage </th>
+                            <td>alle</td>
+                            <td>1</td> 
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>Metalldetektor Mesutronic </th>
+                            <td>alle</td>
+                            <td>user</td> 
+                            <td>2314</td>
+                        </tr>
+                        <tr>
+                            <th>Vimco</th>
+                            <td>alle</td>
+                            <td></td> 
+                            <td></td>
+                        </tr>
+                            <tr>
+                            <th>Siemens Kamera</th>
+                            <td>alle</td>
+                            <td>Benutzer</td> 
+                            <td>Benutzer#1</td>
+                        </tr>
+                            <tr>
+                            <th>Ishida Becherwaage</th>
+                            <td>Vaex</td>
+                            <td>Meister</td> 
+                            <td>1</td>
+                            </tr>
+                            <tr>
+                        
+                            </table>
+                        </label>
+
+                        <label id="vega_pw" style="display: none;" >
+                            <table>
+                                <table border="3">
+                                    
+                                <tr>
+                                <th>Maschinen</th>
+                                <td>Anlage</td>
+                                <td>Benutzername</td>
+                                <td>Passwort</td> 
+                            <tr>
+                                <th>Kopas </th>
+                                <td>alle</td>
+                                <td>Bediener</td>
+                                <td>555</td>  
+                            </tr>
+                            <tr>
+                                <th>Ishida Bandwaage </th>
+                                <td>alle</td>
+                                <td>1</td> 
+                                <td>1</td> 
+                            </tr>
+                            <tr>
+                                <th>Metalldetektor Mesutronic </th>
+                                <td>alle</td>
+                                <td>user</td>
+                                <td>2314</td>  
+                            </tr>
+                            <tr>
+                                <th>Vimco</th>
+                                <td>alle</td>
+                                <td></td> 
+                                <td></td> 
+                            </tr>
+                                <tr>
+                                <th>Siemens Kamera</th>
+                                <td>alle</td>
+                                <td>Benutzer</td>
+                                <td>Benutzer#1</td>  
+                            </tr>
+                                <tr>
+                                <th>Dienst</th>
+                                <td>Oli</td>
+                                <td>Dienst</td> 
+                                <td>74123</td> 
+                                </tr>
+                                <tr>
+                                    <th>Rovema</th>
+                                    <td>Oli</td>
+                                    <td>Bediener</td> 
+                                    <td>1668</td> 
+                                    </tr>
+                            
+                                </table>
+                            </label>
+
+                            <label id="oli_pw" style="display: none;" >
+                                <table>
+                                    <table border="3">
+                                        
+                                    <tr>
+                                    <th>Maschinen</th>
+                                    <td>Anlage</td>
+                                    <td>Benutzername</td>
+                                    <td>Passwort</td> 
+                                <tr>
+                                    <th>Kopas </th>
+                                    <td>alle</td>
+                                    <td>Bediener</td> 
+                                    <td>555</td>
+                                </tr>
+                                <tr>
+                                    <th>Ishida Bandwaage </th>
+                                    <td>alle</td>
+                                    <td>1</td>
+                                    <td>1</td> 
+                                </tr>
+                                <tr>
+                                    <th>Metalldetektor Mesutronic </th>
+                                    <td>alle</td>
+                                    <td>user</td> 
+                                    <td>2314</td>
+                                </tr>
+                                <tr>
+                                    <th>Vimco</th>
+                                    <td>alle</td>
+                                    <td></td> 
+                                    <td></td>
+                                </tr>
+                                    <tr>
+                                    <th>Siemens Kamera</th>
+                                    <td>alle</td>
+                                    <td>Benutzer</td>
+                                    <td>Benutzer#1</td> 
+                                </tr>
+                                    <tr>
+                                    <th>Dienst</th>
+                                    <td>Oli</td>
+                                    <td>Dienst</td> 
+                                    <td>2234</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Rovema</th>
+                                        <td>OLI</td>
+                                        <td>Bediener</td>
+                                        <td>123</td> 
+                                        </tr>
+                                
+                                    </table>
+                                </label>
+                
+
+        <iframe id="pdfViewer" style="width:100%; height:600px; display:none;" ></iframe>
+
+       <script>
+
             if('serviceWorker' in navigator) {
                 navigator.serviceWorker
             .then(reg => console.log(reg))
             .catch(err => console.log(err));
-  
-  
   }
 
            // navigator.serviceWorker.register()
 
         function Kopas() {
-           window.open("Anlagen/KOPAS.pdf");  }
+            document.getElementById("oli_pw").style.display = 'none'
+            document.getElementById("kopas_pw").style.display = 'table'
+            document.getElementById("vami_pw").style.display = 'none'
+            
+            
+        //var pfad = "KOPAS.pdf";
+
+        //document.gerElementById("pdfViewer").data= pdfPath;
+
+          
+        }
+
+
            function Vami() {
-           window.open("Anlagen/VAMI.pdf");  }
+            document.getElementById("vami_pw").style.display = 'table'  
+            document.getElementById("oli_pw").style.display = 'none'
+            document.getElementById("kopas_pw").style.display = 'none'
+            document.getElementById("vega_pw").style.display = 'none'
+            document.getElementById("vaex_pw").style.display = 'none'
+            document.getElementById("vab_pw").style.display = 'none'
+        
+        
+        }
            function Vaex() {
-           window.open("Anlagen/VAEX.pdf");  }
+            document.getElementById("vami_pw").style.display = 'none'  
+            document.getElementById("oli_pw").style.display = 'none'
+            document.getElementById("kopas_pw").style.display = 'none'
+            document.getElementById("vega_pw").style.display = 'none'
+            document.getElementById("vaex_pw").style.display = 'table'
+            document.getElementById("vab_pw").style.display = 'none'
+        }
            function Vega() {
-           window.open("Anlagen/VEGA.pdf");  }
+            document.getElementById("vami_pw").style.display = 'none'  
+            document.getElementById("oli_pw").style.display = 'none'
+            document.getElementById("kopas_pw").style.display = 'none'
+            document.getElementById("vega_pw").style.display = 'table'
+            document.getElementById("vaex_pw").style.display = 'none'
+            document.getElementById("vab_pw").style.display = 'none'
+        }
            function Vab() {
-           window.open("Anlagen/VAB.pdf");  }
+            document.getElementById("vami_pw").style.display = 'none'  
+            document.getElementById("oli_pw").style.display = 'none'
+            document.getElementById("kopas_pw").style.display = 'none'
+            document.getElementById("vega_pw").style.display = 'none'
+            document.getElementById("vaex_pw").style.display = 'none'
+            document.getElementById("vab_pw").style.display = 'table'
+        }
            function Oli() {
-           window.open("Anlagen/OLI.pdf");  }
+            document.getElementById("vami_pw").style.display = 'none'  
+            document.getElementById("oli_pw").style.display = 'table'
+            document.getElementById("kopas_pw").style.display = 'none'
+            document.getElementById("vega_pw").style.display = 'none'
+            document.getElementById("vaex_pw").style.display = 'none'
+            document.getElementById("vab_pw").style.display = 'none'
+           
+           //window.open("Anlagen/OLI.pdf"); 
+         }
           
            
            
+</script>
 
-
-            </script>
+     
 
 
            
